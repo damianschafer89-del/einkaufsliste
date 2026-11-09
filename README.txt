@@ -1,9 +1,16 @@
-Einkaufslisten-App V7
+EINKAUFSLISTEN-APP V10 (PWA)
 
-Öffne index.html. Für den LIVE-Barcode-Scanner muss die App unter HTTPS laufen (z.B. GitHub Pages). Direkt aus einer heruntergeladenen HTML-Datei erlauben Mobilbrowser meist keinen Kamerazugriff.
+GitHub Pages:
+1. Alle Dateien und den Ordner icons aus diesem ZIP ins Hauptverzeichnis deines GitHub-Repositories hochladen.
+2. Settings > Pages > Deploy from a branch > main > /(root) > Save.
+3. HTTPS-Link in Chrome auf Android öffnen.
+4. Chrome-Menü > App installieren oder Zum Startbildschirm hinzufügen. Alternativ erscheint ggf. der Installieren-Button.
+5. Für neue Versionen Dateien ersetzen, Seite neu laden; ggf. App schliessen und erneut öffnen.
 
-Tippe auf Barcode scannen, erlaube Kamera und halte EAN-Barcodes vor die Kamera. Der Scanner bleibt nach erfolgreichem Scan offen. Bekannte Artikel werden sofort hinzugefügt, unbekannte einmalig benannt. Gleiche Artikel werden zusammengefasst. Derselbe Barcode wird für 4,5 Sekunden gegen versehentliches Doppel-Scannen gesperrt.
-
-ZXing wird bei bestehender Internetverbindung über unpkg geladen. Offline-Live-Scanning ist in dieser Version noch nicht verfügbar. Produktnamen werden online über Open Food Facts abgefragt, bereits gelernte Zuordnungen sind lokal gespeichert.
-
-Firebase-Synchronisierung ist noch nicht aktiviert.
+Hinweise:
+- Die App speichert ohne Firebase nur lokal; Geräte sind noch NICHT synchronisiert.
+- Barcode-Scanner benötigt HTTPS, Kameraerlaubnis und eine Internetverbindung zum Laden der ZXing-Bibliothek sowie zur Produktabfrage.
+- Grundoberfläche wird für Offline-Betrieb zwischengespeichert; Fotos und Listen bleiben im Browser-Speicher. Browserdaten nicht löschen.
+- Ton/Vibration hängen von Android, Browser und Geräteeinstellungen ab.
+- Für iPhone: Safari > Teilen > Zum Home-Bildschirm.
+- GitHub Pages ist öffentlich; keine geheimen API-Schlüssel in Dateien eintragen.
